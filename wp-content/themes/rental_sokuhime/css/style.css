@@ -25,21 +25,225 @@ ol, ul {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
 
 .fg, #faq dl dd {
   font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
-
 .fm, #faq dl dt, #reserve table th, footer h5, footer p, #thanks h1 {
   font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
 }
 
+.pont{
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+
+body{
+  width: 100%;
+}
 .wrap{
-  width: 94.6%;
+  width: 100%;
   margin: 0 auto;
   max-width: 710px;
- }
+}
+
+/* header */
+header{
+  background: #fff;
+  height: 60px;
+  width: 100%;
+  /* background: #d5ebe7; */
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .logo img{
+  width: 80px;
+  height:auto;
+  display: block;
+  padding: 10px 0 0 15px;
+}
+
+.header_link {
+  padding: 17px 10px 0 0;
+  font-weight: bold;
+}
 
  
+.header_link a{
+  color: #009357;
+  font-size: 17px;
+}
+
+.top_header_nav ul{
+  /* background: #d5ebe7; */
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;align-items: center;
+  height: 50px;
+}
+.top_header_nav ul li{
+  font-size: 15px;
+}
+.top_header_nav ul li a{
+display: block;
+color: #444;
+}
+
+/* container */
+.container{
+  max-width: 100%;
+  background: #f2f2f2;
+ }
+
+/* 施術別で美容師検索 */
+.container_wrap{
+  max-width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(-135deg, #a5c4e5, #bfedb2) fixed;
+}
+.top_model_reserve{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  background: #fff;
+  border-radius: 10px;
+}
+.top_model_reserve .top_odel_reserve_inner{
+  padding: 20px 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.top_model_reserve .top_odel_reserve_inner h2{
+  font-size: 23px;
+  font-weight: bold;
+}
+.top_model_reserve .top_odel_reserve_inner h2{
+  padding-bottom: 10px;
+}
+
+.top_model_reserve .top_odel_reserve_inner ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.top_model_reserve ul li {
+  width: 48%;
+  height: 40px;
+  margin-bottom: 20px;
+  border:1px solid  #009357;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 2.2;
+  font-weight: bold;
+}
+.top_model_reserve ul .cut a{
+  background: url(../images/icon/cut_icon.png) center no-repeat;
+  background-position: 7px center;
+  background-size: 23px 23px;
+}
+.top_model_reserve ul .color a{
+  background: url(../images/icon/color_icon.png) center no-repeat;
+  background-position: 7px center;
+  background-size: 23px 23px;
+}
+.top_model_reserve ul .treatment a{
+  background: url(../images/icon/treatment_icon.png) center no-repeat;
+  background-position: 7px center;
+  background-size: 23px 23px;
+}
+.top_model_reserve ul .hairarenge a{
+  background: url(../images/icon/hairarenge_icon.png) center no-repeat;
+  background-position: 7px center;
+  background-size: 23px 23px;
+}
+.top_model_reserve ul li a{
+  color: #444;
+  padding-left: 35px;
+  height: 40px;
+  display: block;
+}
+
+/* silder */
+.airticle_wrap{
+  max-width: 100%;
+  height: auto;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  background: rgb(250, 250, 250);
+}
+.silder_inner{
+  width: 100%;
+}
+.slider_content{
+  background: rgb(250, 250, 250);
+  width: 100%;
+
+}
+.slider_content h2{
+  font-size: 23px;
+  padding: 10px 0 10px 5px;
+}
+/* .slider_content .silder_inner{
+} */
+
+.slider_content .slider_dresser_list{
+  padding: 10px;
+}
+
+.slider_content .slider_dresser_list .list_item{
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  box-shadow:0 0 5px #ccc;
+  border:5px solid #fff;
+}
+.slider_content .slider_dresser_list .list_item .dresser_info{
+  position: relative;
+  align-items: baseline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.slider_content .slider_dresser_list .list_item .dresser_info .dresser_photo{
+  height: auto;
+  display: block;
+  border-radius: 5px;
+} 
+.slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(80, 80, 80, 0.75);
+  padding: 5px 20px ;
+  box-sizing: border-box;
+  border-radius:0 0 5px 5px;
+} 
+.slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail h3{
+
+} 
+.slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail .dresser_shop{
+  display: block;
+  font-size: 10px;
+
+} 
+
+
+
+
+
+
+
+
 
