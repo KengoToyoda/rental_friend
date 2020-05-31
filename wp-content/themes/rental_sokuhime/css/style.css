@@ -73,7 +73,7 @@ body{
   position: relative;
 }
 
-.fixed-bg h1{
+.fixed-bg h1 a{
   color: white;
   opacity: .8;
   font-size: 60px;
@@ -105,8 +105,6 @@ body{
 }
 
 .top_header_nav ul{
-  /* background: #d5ebe7; */
-  /* background: #fff; */
   display: flex;
   justify-content: space-evenly;align-items: center;
   height: 50px;
@@ -126,7 +124,7 @@ color: #444;
  }
 
 /* 施術別で美容師検索 */
-.container_wrap{
+.service_wrap{
   max-width: 100%;
   height: auto;
   padding: 20px 10px;
@@ -194,12 +192,12 @@ color: #444;
   display: block;
 }
 
-/* silder */
+/* article_wrap */
 .airticle_wrap{
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
+/* silder */
 .silder_inner{
   width: 100%;
 }
@@ -396,11 +394,16 @@ font-size: 15px;
   }
 
   /* hair style */
-
+.haie_style_wrap{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* hair_style */
 .hair_style{
   background: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 .hair_style h2{
   font-size: 35px;
@@ -413,7 +416,7 @@ font-size: 15px;
 .hair_style h2::before{
   content: "";
   position: absolute;
-  top: 41px;
+  top: 40px;
   left: 0;
   right: 0;
   height: 2px;
@@ -484,37 +487,94 @@ font-size: 15px;
 }
 
 /* hair color */
-/* .hair_style ul li .short{
-  background-image: url(../images/hair_catalog/short_hair.jpeg);
+.hair_style ul li .greige{
+  background-image: url(../images/hair_style/greige_color.jpeg);
   background-position: center;
   background-size: cover;
-}
-.hair_style ul li .bob{
-  background-image: url(../images/hair_catalog/Bob_hair.jpeg);
+} 
+.hair_style ul li .beige{
+  background-image: url(../images/hair_style/beige_color.jpeg);
   background-position: center;
   background-size: cover;
-}
-.hair_style ul li .medium{
-  background-image: url(../images/hair_catalog/medium_hair.jpeg);
+} 
+.hair_style ul li .pink{
+  background-image: url(../images/hair_style/pink_color.jpeg);
   background-position: center;
   background-size: cover;
-}
-.hair_style ul li .long{
-  background-image: url(../images/hair_catalog/long_hair.jpeg);
+} 
+.hair_style ul li .ash{
+  background-image: url(../images/hair_style/ash_color.jpeg);
   background-position: center;
   background-size: cover;
-}
-.hair_style ul li .hair_arenge{
-  background-image: url(../images/hair_catalog/hair_arenge.jpeg);
+} 
+.hair_style ul li .lavender{
+  background-image: url(../images/hair_style/lavender_color.jpeg);
   background-position: center;
   background-size: cover;
-}
-.hair_style ul li .extension{
-  background-image: url(../images/hair_catalog/extension.jpeg);
+} 
+.hair_style ul li .black{
+  background-image: url(../images/hair_style/black_color.jpeg);
   background-position: center;
   background-size: cover;
-} */
+} 
 
+
+/* sns_wrap */
+
+.sns_wrap{
+  max-width: 100%;
+  height: auto;
+}
+.sns_content{
+  background: #fff;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+.sns_content span{
+  display: block;
+  padding-bottom:10px ;
+  font-family: '游明朝体','YuMincho', "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+.sns_content strong{
+  display: block;
+}
+.sns_content a{
+  display: block;
+  width: 70px;
+  height: 70px;
+  padding:20px 0 10px ;
+  margin: 0 auto;
+}
+
+/* fotter */
+footer{
+  background: #000;
+  padding: 15px;
+  color: #fff;
+}
+.footer_content{
+  padding-bottom:10px;
+}
+footer .footer_block{
+  padding-bottom: 15px;
+}
+footer .footer_block h2{
+  padding-bottom: 5px;
+}
+footer .footer_block ul li{
+  display: inline-block;
+}
+footer .footer_block ul li a{
+  font-size: 12px;
+  padding: 0 10px;
+  color: #fff;
+  border-right: #fff solid 1px;
+}
+
+.copyright{
+  font-size:12px;
+  text-align: center;
+}
 
 
 
