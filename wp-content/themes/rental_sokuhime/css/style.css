@@ -50,13 +50,36 @@ body{
   max-width: 710px;
 }
 
-/* header */
-header{
-  background: #fff;
-  height: 60px;
-  width: 100%;
-  /* background: #d5ebe7; */
+@media(min-width:780px){
+  .wrap{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
+
+/* header */
+
+.fixed-bg {
+  background: url(../images/eye_catch//eye_catch3.JPG) ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 150px 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: 400px;
+  opacity: 0.8;
+  position: relative;
+}
+
+.fixed-bg h1{
+  color: white;
+  opacity: .8;
+  font-size: 60px;
+  font-family: "游明朝",YuMincho,"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","メイリオ",Meiryo,"ＭＳ Ｐ明朝",serif;
+}
+
 
 #header{
   display: flex;
@@ -83,7 +106,7 @@ header{
 
 .top_header_nav ul{
   /* background: #d5ebe7; */
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   justify-content: space-evenly;align-items: center;
   height: 50px;
@@ -107,7 +130,7 @@ color: #444;
   max-width: 100%;
   height: auto;
   padding: 20px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background: linear-gradient(-135deg, #a5c4e5, #bfedb2) fixed;
 }
 .top_model_reserve{
@@ -117,21 +140,19 @@ color: #444;
   background: #fff;
   border-radius: 10px;
 }
-.top_model_reserve .top_odel_reserve_inner{
+.top_model_reserve .top_model_reserve_inner{
   padding: 20px 10px;
   position: relative;
   top: 0;
   left: 0;
 }
-.top_model_reserve .top_odel_reserve_inner h2{
+.top_model_reserve .top_model_reserve_inner h2{
   font-size: 23px;
   font-weight: bold;
-}
-.top_model_reserve .top_odel_reserve_inner h2{
   padding-bottom: 10px;
 }
 
-.top_model_reserve .top_odel_reserve_inner ul{
+.top_model_reserve .top_model_reserve_inner ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -142,7 +163,7 @@ color: #444;
   margin-bottom: 20px;
   border:1px solid  #009357;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2.2;
   font-weight: bold;
 }
@@ -177,24 +198,22 @@ color: #444;
 .airticle_wrap{
   max-width: 100%;
   height: auto;
-  padding: 20px 0;
   margin-bottom: 10px;
-  background: rgb(250, 250, 250);
 }
 .silder_inner{
   width: 100%;
 }
 .slider_content{
-  background: rgb(250, 250, 250);
+  background: #fff;
   width: 100%;
-
+  margin-bottom: 20px;
 }
 .slider_content h2{
   font-size: 23px;
-  padding: 10px 0 10px 5px;
+  padding: 20px 0px 0 20px;
+  font-weight: bold;
+
 }
-/* .slider_content .silder_inner{
-} */
 
 .slider_content .slider_dresser_list{
   padding: 10px;
@@ -206,7 +225,14 @@ color: #444;
   padding: 10px;
   box-shadow:0 0 5px #ccc;
   border:5px solid #fff;
+  border-radius: 7px;
 }
+
+.slider_content .slider_dresser_list .list_item a{
+color: #444;
+font-size: 15px;
+}
+
 .slider_content .slider_dresser_list .list_item .dresser_info{
   position: relative;
   align-items: baseline;
@@ -214,11 +240,13 @@ color: #444;
   font-weight: bold;
   color: #fff;
 }
+
 .slider_content .slider_dresser_list .list_item .dresser_info .dresser_photo{
   height: auto;
   display: block;
   border-radius: 5px;
 } 
+
 .slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail {
   width: 100%;
   position: absolute;
@@ -230,17 +258,262 @@ color: #444;
   box-sizing: border-box;
   border-radius:0 0 5px 5px;
 } 
-.slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail h3{
 
-} 
 .slider_content .slider_dresser_list .list_item .dresser_info .dresser_info_detail .dresser_shop{
   display: block;
   font-size: 10px;
-
 } 
 
+.slider_content .slider_dresser_list .list_item a .popular_service_menu{
+  background: url(../images/icon/menu.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  padding: 3px 0 3px 30px;
+} 
+.slider_content .slider_dresser_list .list_item a .popular_seivice_price{
+  background: url(../images/icon/money.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  padding: 3px 0 3px 30px;
+} 
+.slider_content .slider_dresser_list .list_item a .prefecture_station{
+  background: url(../images/icon/map.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  font-size: 12px;
+  padding: 3px 0 3px 30px;
+  }
 
+.container_see_all_btn{
+    text-align: right;
+    padding: 20px;
+  }
 
+.container_see_all_btn a{
+  display: block; 
+  font-size: 17px;
+  font-weight: bold;
+  color: #009357;
+}
+
+/* ranking */
+
+.ranking_content {
+  max-width: 100%;
+  padding: 20px 15px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.ranking_content h2{
+  font-weight: bold;
+  font-size: 23px;
+  padding: 0 0 20px 5px ;
+}
+
+.ranking_content  ul{
+  text-align: center;
+}
+.ranking_content  ul .list_item{
+  margin: 20px auto;
+  width: 100%;
+}
+.ranking_content  ul .list_item a{
+  color: #444;
+}
+.ranking_content  ul .list_item .list_inner{
+  margin:0 20px ;
+  text-align: left;
+    overflow: hidden;
+  box-shadow:0 0 5px #ccc;
+  border:10px solid #fff;
+  border-radius: 7px;
+}
+
+.ranking_content  ul .list_item a .dresser_info{
+  position: relative;
+  align-items: baseline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+ 
+}
+
+.ranking_content  ul .list_item a .dresser_info .dresser_photo{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.ranking_content  ul .list_item a .dresser_info .dresser_info_detail{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(80, 80, 80, 0.75);
+  padding: 5px 20px ;
+  box-sizing: border-box;
+  border-radius:0 0 5px 5px;
+ 
+}
+
+.ranking_content  ul .list_item a .dresser_info .dresser_info_detail .dresser_name{
+  font-size: 30px;
+  background: url(../images/icon/person_icon.png) no-repeat;
+  background-position: 7px;
+  background-size: 30px 30px;
+  padding-left:50px;
+}
+
+.ranking_content  ul .list_item a .dresser_info .dresser_info_detail .dresser_shop{
+  font-size: 15px;
+  background: url(../images/icon/shop_icon.png) no-repeat ;
+  background-position: 14px;
+  background-size: 15px 15px;
+  padding-left:50px;
+}
+
+.ranking_content  ul .list_item a .popular_service_menu{
+  background: url(../images/icon/menu.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  padding: 3px 0 3px 30px;
+} 
+.ranking_content  ul .list_item a .popular_seivice_price{
+  background: url(../images/icon/money.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  padding: 3px 0 3px 30px;
+} 
+.ranking_content  ul .list_item a .prefecture_station{
+  background: url(../images/icon/map.png) no-repeat;
+  background-position: 7px;
+  background-size: 15px 15px;
+  font-size: 12px;
+  padding: 3px 0 3px 30px;
+  }
+
+  /* hair style */
+
+.hair_style{
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.hair_style h2{
+  font-size: 35px;
+  position: relative;
+  font-weight:bold;
+  color: #009357;
+  margin-bottom: 10px;
+}
+
+.hair_style h2::before{
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: #009357;
+  display: block;
+}
+.hair_style h3{
+  font-size: 20px;
+  font-weight:bold;
+  margin-bottom: 10px;
+}
+.hair_style ul li{
+  display: inline-block;
+}
+.hair_style ul {
+  margin-bottom: 20px;
+}
+
+.hair_style ul li .circle_img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 2px solid rgba(59, 117, 59, 0.5);
+}
+.hair_style ul li strong{
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  top: 75px;
+  right: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* hair catalog */
+.hair_style ul li .short{
+  background-image: url(../images/hair_catalog/short_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .bob{
+  background-image: url(../images/hair_catalog/Bob_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .medium{
+  background-image: url(../images/hair_catalog/medium_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .long{
+  background-image: url(../images/hair_catalog/long_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .hair_arenge{
+  background-image: url(../images/hair_catalog/hair_arenge.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .extension{
+  background-image: url(../images/hair_catalog/extension.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* hair color */
+.hair_style ul li .short{
+  background-image: url(../images/hair_catalog/short_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .bob{
+  background-image: url(../images/hair_catalog/Bob_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .medium{
+  background-image: url(../images/hair_catalog/medium_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .long{
+  background-image: url(../images/hair_catalog/long_hair.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .hair_arenge{
+  background-image: url(../images/hair_catalog/hair_arenge.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.hair_style ul li .extension{
+  background-image: url(../images/hair_catalog/extension.jpeg);
+  background-position: center;
+  background-size: cover;
+}
 
 
 
