@@ -453,38 +453,38 @@ font-size: 15px;
 
 /* hair catalog */
 .hair_style ul li .short{
-  background-image: url(../images/hair_catalog/short_hair.jpeg);
+  background-image: url(../images/hair_style/short_hair.jpeg);
   background-position: center;
   background-size: cover;
 }
 .hair_style ul li .bob{
-  background-image: url(../images/hair_catalog/Bob_hair.jpeg);
+  background-image: url(../images/hair_style/Bob_hair.jpeg);
   background-position: center;
   background-size: cover;
 }
 .hair_style ul li .medium{
-  background-image: url(../images/hair_catalog/medium_hair.jpeg);
+  background-image: url(../images/hair_style/medium_hair.jpeg);
   background-position: center;
   background-size: cover;
 }
 .hair_style ul li .long{
-  background-image: url(../images/hair_catalog/long_hair.jpeg);
+  background-image: url(../images/hair_style/long_hair.jpeg);
   background-position: center;
   background-size: cover;
 }
 .hair_style ul li .hair_arenge{
-  background-image: url(../images/hair_catalog/hair_arenge.jpeg);
+  background-image: url(../images/hair_style/hair_arenge.jpeg);
   background-position: center;
   background-size: cover;
 }
 .hair_style ul li .extension{
-  background-image: url(../images/hair_catalog/extension.jpeg);
+  background-image: url(../images/hair_style/extension.jpeg);
   background-position: center;
   background-size: cover;
 }
 
 /* hair color */
-.hair_style ul li .short{
+/* .hair_style ul li .short{
   background-image: url(../images/hair_catalog/short_hair.jpeg);
   background-position: center;
   background-size: cover;
@@ -513,7 +513,7 @@ font-size: 15px;
   background-image: url(../images/hair_catalog/extension.jpeg);
   background-position: center;
   background-size: cover;
-}
+} */
 
 
 
