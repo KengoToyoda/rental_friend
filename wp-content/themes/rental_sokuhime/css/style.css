@@ -47,21 +47,15 @@ body{
 .wrap{
   width: 100%;
   margin: 0 auto;
-  max-width: 710px;
+  max-width: 750px;
 }
-
-@media(min-width:780px){
-  .wrap{
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
+.pc{
+  display: none;
 }
 
 /* header */
-
 .fixed-bg {
-  background: url(../images/eye_catch//eye_catch3.JPG) ;
+  background: url(../images/eye_catch//eye_catch3.JPG);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -79,30 +73,9 @@ body{
   font-size: 60px;
   font-family: "游明朝",YuMincho,"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","メイリオ",Meiryo,"ＭＳ Ｐ明朝",serif;
 }
-
-
-#header{
-  display: flex;
-  justify-content: space-between;
-}
-
-#header .logo img{
-  width: 80px;
-  height:auto;
-  display: block;
-  padding: 10px 0 0 15px;
-}
-
-.header_link {
-  padding: 17px 10px 0 0;
-  font-weight: bold;
-}
-
- 
-.header_link a{
-  color: #009357;
-  font-size: 17px;
-}
+/* .top_header_nav_pc{
+  display:none;
+} */
 
 .top_header_nav ul{
   display: flex;
@@ -121,7 +94,7 @@ color: #444;
 .container{
   max-width: 100%;
   background: #f2f2f2;
- }
+}
 
 /* 施術別で美容師検索 */
 .service_wrap{
@@ -261,7 +234,6 @@ font-size: 15px;
   display: block;
   font-size: 10px;
 } 
-
 .slider_content .slider_dresser_list .list_item a .popular_service_menu{
   background: url(../images/icon/menu.png) no-repeat;
   background-position: 7px;
@@ -548,35 +520,164 @@ font-size: 15px;
 
 /* fotter */
 footer{
+  text-align: left;
+}
+footer .footer_content{
   background: #000;
   padding: 15px;
   color: #fff;
 }
-.footer_content{
+.footer_content .footer_inner{
   padding-bottom:10px;
 }
-footer .footer_block{
+.footer_content .footer_inner .footer_block{
   padding-bottom: 15px;
 }
-footer .footer_block h2{
+.footer_content .footer_inner .footer_block h2{
   padding-bottom: 5px;
 }
-footer .footer_block ul li{
+.footer_content .footer_inner .footer_block ul li{
   display: inline-block;
 }
-footer .footer_block ul li a{
+.footer_content .footer_inner .footer_block ul li a{
   font-size: 12px;
   padding: 0 10px;
   color: #fff;
   border-right: #fff solid 1px;
 }
 
-.copyright{
+.footer_content .copyright{
   font-size:12px;
   text-align: center;
+}
+
+
+/* pc版 レスポンシブデザイン */
+
+@media(min-width:780px){
+/* wrap */
+.wrap{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+  background: #f2f2f2;
+}
+.pc {
+  display: block;
+}
+/* header eye catch */
+.fixed-bg {
+  background: url(../images/eye_catch//eye_catch3.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 220px 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: 500px;
+  opacity: 0.8;
+  position: relative;
+}
+.fixed-bg h1 a{
+  color: white;
+  opacity: .8;
+  font-size: 60px;
+  font-family: "游明朝",YuMincho,"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","メイリオ",Meiryo,"ＭＳ Ｐ明朝",serif;
+}
+
+.top_header_nav {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+background: #fff;
+opacity: 0.7;
+}
+.top_header_nav ul{
+  display: flex;
+  justify-content: space-evenly;align-items: center;
+  height: 70px;
+}
+.top_header_nav ul li{
+  font-size: 15px;
+}
+.top_header_nav ul li a{
+display: block;
+color: #444;
+}
+.header_nav_logo_pc{
+  padding-top:7px;
+}
+
+/* container */
+.container{
+  max-width: 1200px;
+  background: #f2f2f2;
+  margin: 0 auto;
+}
+.pc_flex{
+  display: flex;
+}
+.pc_flex .pc_left_block{
+  margin-right: 20px;
+}
+.pc_flex .pc_right_block{
+  margin-left: 20px;
+}
+
+/* footer */
+footer{
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .footer_content{
+  background: #000;
+  padding: 60px 40px 20px;
+  color: #fff;
+}
+.footer_content .footer_inner{
+  padding-bottom:50px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer_content .footer_inner .footer_block{
+  padding-bottom: 15px;
+  text-align: left;
+  margin-right: 20px;
+}
+.footer_content .footer_inner .footer_block ul li{
+  display: inline-block;
+}
+.footer_content .footer_inner .footer_block ul{
+  text-align: left;
+}
+.footer_content .footer_inner .footer_block ul li a{
+  font-size: 12px;
+  padding: 0 10px 0 0;
+  color: #fff;
+  border-right: #fff solid 1px;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
