@@ -55,7 +55,7 @@
       $(document).ready(function(){
         $('.slider').bxSlider({
           moveSlides:1,
-          slideWidth: 280,
+          slideWidth: 300,
           touchEnabled:true,
           minSlides:2,
           maxSlides:5,
@@ -67,7 +67,9 @@
       jQuery(document).ready(function(){
         $('.bx-wrapper').css('max-width','100%');
         $('.bx-viewport').css('height','400px');
+        $('.post-type-post').css('width','4auto');
       });
     </script>
+    <?php wp_footer(); ?>
   </body>
 </html>
