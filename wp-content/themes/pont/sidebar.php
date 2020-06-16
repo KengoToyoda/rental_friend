@@ -7,7 +7,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
@@ -33,7 +33,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
@@ -59,7 +59,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
@@ -85,7 +85,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
@@ -111,7 +111,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
@@ -137,7 +137,7 @@
                   <a href="">
                     <div class="list_inner">
                       <div class="dresser_info">
-                        <img class="dresser_photo" src="images/dresser_photo/dresser_photo1.png" title="あああああああああ">
+                        <img class="dresser_photo" src="<?= get_template_directory_uri();?>/images/dresser_photo/dresser_photo1.png" title="">
                         <div class="dresser_info_detail fg">
                           <h3 class="dresser_name">
                             竹沢　拡
