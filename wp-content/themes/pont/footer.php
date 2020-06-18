@@ -67,7 +67,7 @@
       jQuery(document).ready(function(){
         $('.bx-wrapper').css('max-width','100%');
         $('.bx-viewport').css('height','400px');
-        $('.post-type-post').css('width','4auto');
+        $('.post-type-post').css('width','auto');
       });
     </script>
     <?php wp_footer(); ?>

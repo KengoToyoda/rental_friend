@@ -16,7 +16,8 @@ get_header();
             <!-- article_wrap -->
             <section class="airticle_wrap">
               <!-- 新着美容師 -->
-              <div class="slider_content ">
+              <div class="slider_content">
+                <a name="new_dresser">
                 <h2 class="pont">
                   新規掲載の美容師
                 </h2>
@@ -43,18 +44,12 @@ get_header();
                   <?php endif; ?>
                   </ul>
                 </div>
-                <div class="container_see_all_btn">
-                  <a href="" class="pont">
-                    新規掲載の美容師を全て見る
-                  </a>
-                </div>
               </div>
-
-              
+              </a>
             </section> <!-- article_wrap end -->
             <!-- hair_style -->
             <?php get_template_part('hair_style'); ?>
+            <?php get_template_part('aside'); ?>
           </div>
-        <?php get_sidebar(); ?>
-        <?php get_template_part('aside'); ?>
+        <?php get_sidebar(); ?>    
       <?php get_footer(); ?>

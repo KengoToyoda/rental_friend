@@ -1,6 +1,7 @@
 <div class="pc_right_block"> <!-- ここからsidebar.php -->
             <!-- ranking -->
             <div class="ranking_content">
+              <a name="ranking">
               <h2 class="pont">美容師ランキング</h2>
               <ul>
                 <li class="list_item">
@@ -163,6 +164,7 @@
               <div class="container_see_all_btn">
                 <a href="" class="pont">新規掲載の美容師を全て見る</a>
               </div>
+              </a>
             </div>
           </div> <!-- ここまでsidebar.php -->
         </div> <!-- pc_flex end -->

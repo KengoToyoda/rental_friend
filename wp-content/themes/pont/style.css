@@ -61,8 +61,12 @@ body{
   display: none;
 }
 
+.fixed-bg_pc{
+  display: none;
+}
+
 /* header */
-.fixed-bg {
+.fixed-bg_sp {
   background: url(images/eye_catch/eye_catch3.JPG);
   background-size: cover;
   background-attachment: fixed;
@@ -75,29 +79,38 @@ body{
   position: relative;
 }
 
-.fixed-bg h1 a{
+.fixed-bg_sp h1 a{
   color: white;
   opacity: .8;
   font-size: 60px;
   font-family: "游明朝",YuMincho,"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","メイリオ",Meiryo,"ＭＳ Ｐ明朝",serif;
-} */
+}
 
-.top_header_nav_pc{
-  display:none;
-}
-.top_header_nav ul{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-}
-.top_header_nav ul li{
-  font-size: 15px;
-}
-.top_header_nav ul li a{
-display: block;
-color: #444;
-}
+/* .top_header_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  opacity: 0.7;
+  } */
+  .top_header_nav ul{
+    display: flex;
+    justify-content: space-evenly;align-items: center;
+    height: 70px;
+    background: #fff;
+  }
+  .top_header_nav ul li{
+    font-size: 15px;
+  }
+  .top_header_nav ul li a{
+  display: block;
+  color: #444;
+  }
+  .header_nav_logo_pc{
+    padding-top:7px;
+  }
+
 /* container */
 .container{
   max-width: 100%;
@@ -212,6 +225,8 @@ color: #444;
 .slider_content .slider_dresser_list .list_item a{
 color: #444;
 font-size: 15px;
+height: auto;
+display: block;
 }
 
 .slider_content .slider_dresser_list .list_item .dresser_info{
@@ -567,6 +582,8 @@ footer .footer_content{
   text-align: center;
 }
 
+
+
 /* 投稿個別ページcss */
 .single_page_wrap{
   max-width: 100%;
@@ -598,9 +615,9 @@ footer .footer_content{
   display: inline-block;
   position: relative;
   border: 2px solid #fff;
-  background-image: url(images/dresser_photo/dresser_photo1.png);
+  /* background-image: url(images/dresser_photo/dresser_photo1.png);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   margin-right: 20px;
 }
 .single_header .single_header_dresser{
@@ -668,12 +685,51 @@ height: auto;
 }
 
 
+/* archive_page css (記事一覧ページ)*/
+
+.archive_page{
+  background:#f2f2f2;
+  padding: 20px 0;
+}
+.archive_page .archive_inner{
+  padding: 20px 10px;
+  background: #fff;
+}
+.archive_page .archive_inner .archive_content{
+  margin: 0 auto;
+}
+.archive_page .archive_inner h2{
+  font-size: 20px;
+  padding: 20px ;
+}
+
+.archive_page ul {
+  margin: 0 auto;
+}
+.archive_page ul li{
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+.archive_page ul li a{
+  display: flex;
+}
+.archive_page ul li a p{
+  display: block;
+  color: #000;
+  padding: 0 10px;
+}
 
 
 
 
+.archive_page ul li img {
+  width: 150px;
 
 
+}
 
 
 
@@ -698,6 +754,11 @@ height: auto;
 /* pc版 レスポンシブデザイン */
 
 @media(min-width:780px){
+
+
+.sp{
+  display: none;
+}
 /* wrap */
 .wrap{
   width: 100%;
@@ -709,7 +770,7 @@ height: auto;
   display: block;
 }
 /* header eye catch */
-.fixed-bg {
+.fixed-bg_sp {
   background: url(images/eye_catch//eye_catch3.JPG);
   background-size: cover;
   background-attachment: fixed;
@@ -721,21 +782,21 @@ height: auto;
   opacity: 0.8;
   position: relative;
 }
-.fixed-bg h1 a{
+.fixed-bg_sp h1 a{
   color: white;
   opacity: .8;
   font-size: 60px;
   font-family: "游明朝",YuMincho,"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","メイリオ",Meiryo,"ＭＳ Ｐ明朝",serif;
 }
 
-.top_header_nav {
+/* .top_header_nav {
 position: absolute;
 top: 0;
 left: 0;
 right: 0;
 background: #fff;
 opacity: 0.7;
-}
+} */
 .top_header_nav ul{
   display: flex;
   justify-content: space-evenly;align-items: center;
@@ -854,6 +915,20 @@ width: 250px;
 height: auto;
 }
 
+
+/* 投稿一覧 */
+
+.archive_page ul li{
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.archive_page .archive_inner .archive_content{
+  margin: 0 auto;
+  max-width: 1000px;
+}
 
 
 

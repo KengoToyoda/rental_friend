@@ -8,3 +8,8 @@ add_theme_support('title-tag');
 
 #アイキャッチ画像を使用可能にする
 add_theme_support('post-thumbnails');
+
+function load_script(){
+  wp_enqueue_script('jquery');
+}
+add_action('init', 'load_script');
