@@ -5,10 +5,10 @@
     <div class="hair_style">
       <h2>
         <p>
-          HAIR CATALOG
+          HAIR STYLE
         </p>
       </h2>
-      <h3>人気のヘアカログ</h3>
+      <h3>人気のヘアスタイル</h3>
       <ul>
         <li><a href="" class="circle_img short">
           <strong>ショート</strong>

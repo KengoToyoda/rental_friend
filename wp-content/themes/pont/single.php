@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-
-
-        <section class="single_page_wrap">
-        <?php if ( have_posts() ) : ?>
-             <?php while (have_posts() ) : the_post(); ?>
-              <article id="post-<?php the_ID(); ?>" <?php post_class('single_article'); ?>>
+    <div class="pc_flex">
+      <div class="pc_left_block">
+        <section class="wrapper">
+          <?php if ( have_posts() ) : ?>
+            <?php while (have_posts() ) : the_post(); ?>
+              <article id="post-<?php the_ID(); ?>" <?php post_class( 'airticle'); ?>>
                 <div class="single_header">
                   <ul>
                     <li>
@@ -21,16 +21,19 @@
                     <li><a href="">予約</a></li>
                   </ul>
                 </nav>
-                
+                <?php get_template_part('template-parts/breadcrumb'); ?>
                 <div class="single_inner">
                     <div class="single_sentense">
                       <a name="profile">
-                        <?php the_category(); ?>
-                       <?php the_content(); ?>
+                        <div class="dresser_attribute">
+                          <?php the_category(); ?>
+                          <time class="" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日'); ?></time>
+                        </div>
+                        <?php the_content(); ?>
                       </a>
                     </div>
                 </div>
-            </article>
+              </article>
             <?php endwhile; ?>
           <?php endif; ?>
           <div class="single_photo">
@@ -56,7 +59,12 @@
               </ul>
             </a>
           </div>
-          <?php get_template_part('hair_style'); ?>
         </section>
-  
+        <?php get_template_part('hair_style'); ?>
+      </div>
+      <div class="pc_right_block">
+      <?php get_sidebar(); ?>
+      <?php get_template_part('aside'); ?>
+      </div>
+    </div>   
 <?php get_footer(); ?>

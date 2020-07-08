@@ -35,13 +35,14 @@
               </ul>
             </div>
             <div class="footer_block">
-              <h2 class="pont">Pontについて</h2>
+              <h2 class="pont">Pont hairとは</h2>
               <ul>
-                <li><a href="" alt="">Pontとは</a></li>
-                <li><a href="" alt="">運営会社：株式会社〇〇</a></li>
-                <li><a href="" alt="">お問い合わせ</a></li>
-                <li><a href="" alt="">プライバシーポリシー</a></li>
-                <li><a href="" alt="">美容師一覧</a></li>
+                <li><a href="<?php echo get_permalink(33); ?>" alt="pont hairとは">Pontとは</a></li>
+                <li><a href="" alt="運営会社">運営会社：株式会社〇〇</a></li>
+                <li><a href="<?php echo get_permalink(44); ?>" alt="お問い合わせ">お問い合わせ</a></li>
+                <li><a href="<?php echo get_permalink(3); ?>" alt="プライバシーポリシー">プライバシーポリシー</a></li>
+                <li><a href="" alt="美容師一覧">美容師一覧</a></li>
+                <li><a href="<?php echo get_permalink(31); ?>" alt="美容師の方はこちら">美容師の方はこちら</a></li>
               </ul>
             </div>
           </div>
@@ -55,7 +56,7 @@
       $(document).ready(function(){
         $('.slider').bxSlider({
           moveSlides:1,
-          slideWidth: 300,
+          slideWidth: 320,
           touchEnabled:true,
           minSlides:2,
           maxSlides:5,
@@ -67,7 +68,7 @@
       jQuery(document).ready(function(){
         $('.bx-wrapper').css('max-width','100%');
         $('.bx-viewport').css('height','400px');
-        $('.post-type-post').css('width','auto');
+        $('.list_item').css('width','200px');
       });
     </script>
     <?php wp_footer(); ?>

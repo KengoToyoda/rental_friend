@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="Keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale
+    =1, maximum-scale=1, user-scalable=no">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri();?>/style.css">
@@ -23,14 +25,15 @@
     <section class="wrap">
       <!-- header -->
       <nav class="top_header_nav pont ">
-        <ul>
-          <li class="pc header_nav_logo_pc"><a href=""><img src="<?= get_template_directory_uri();?>/images/title/header_title.jpeg" width="100px"></a></li>
-          <li><a href="#new_dresser">新規掲載</a></li>
-          <li><a href="#hair_catelog">ヘアカタログ</a></li>
-          <li><a href="#ranking">ランキング</a></li>
-          <li><a href="http://localhost/rental_friend/">トップページ</a></li>
-          <li class="pc"><a href="" class="header_nav_pc">美容師の方はこちら</a></li>
-        </ul>
+        <?php 
+        $args = array(
+          'menu' => 'menu_sp' ,
+          'menu_class' => 'circleBehind' ,
+          'container' => true,
+          'container_class' => 'top_header_nav pont'
+        );
+        wp_nav_menu($args);
+        ?>
       </nav>
       <!-- header eye catch-->
       <?php if ( is_home() ): ?>

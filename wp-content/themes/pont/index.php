@@ -8,7 +8,6 @@
  */
 get_header();
 ?>
-
         <div class="pc_flex">
           <div class="pc_left_block">
             <!-- 検索フォーム -->
@@ -21,7 +20,7 @@ get_header();
                 <h2 class="pont">
                   新規掲載の美容師
                 </h2>
-                <div class="slider_inner ">
+                <div class="slider_inner">
                   <ul class="slider_dresser_list slider">
                   <!-- 記事のループを作成 -->
                   <?php if ( have_posts() ) : ?>
@@ -34,15 +33,19 @@ get_header();
                               <?php the_title(); ?>
                             </div>
                           </div>
-                          <ul>
-                          <?php the_category(); ?>
+                          <div class="dresser_attribute">
+                            <?php the_category(); ?>
+                            <time class="" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日'); ?></time>
+                          </div>
                           <?php the_excerpt(); ?>
-                          </ul>
                         </a>
                       </li>
                     <?php endwhile; ?>
                   <?php endif; ?>
                   </ul>
+                </div>
+                <div class="container_see_all_btn">
+                  <a href="http://localhost/rental_friend/category/%e7%be%8e%e5%ae%b9%e5%b8%ab%e3%82%a2%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%b3%e3%83%88/" class="pont">新規掲載の美容師を全て見る</a>
                 </div>
               </div>
               </a>
@@ -50,6 +53,9 @@ get_header();
             <!-- hair_style -->
             <?php get_template_part('hair_style'); ?>
             <?php get_template_part('aside'); ?>
-          </div>
-        <?php get_sidebar(); ?>    
+          </div> <!-- pc_left_block end -->
+          <div class="pc_right_block"> <!-- ここからsidebar.php -->
+            <?php get_sidebar(); ?>  
+          </div> <!-- pc_right_block end -->  
+        </div> <!-- pc_flex end --> 
       <?php get_footer(); ?>
