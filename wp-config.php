@@ -26,13 +26,8 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-<<<<<<< HEAD
-define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/rental_friend/wp-content/plugins/wp-super-cache/' );
+
 define( 'DB_NAME', 'rental_friend' );
-=======
-define( 'DB_NAME', 'wp_rental' );
->>>>>>> 0410d3c7678b680a8f5ec1bcca84abc1ac402e8e
 
 /** MySQL データベースのユーザー名 */
 define( 'DB_USER', 'root' );
