@@ -155,6 +155,8 @@ body{
 .search_container input[type="text"]{
   border: none;
   height: 2em;
+  width: 100%;
+  padding: 0 15px;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -177,16 +179,11 @@ body{
   position: absolute;
   right:0px;
   top: -5px;
-
   cursor: pointer;
 }
 .search_container ::-webkit-input-placeholder {
   color: #444;
 }
-
-
-
-
 
 .service_wrap{
   max-width: 100%;
@@ -204,7 +201,6 @@ body{
 }
 .top_model_reserve .top_model_reserve_inner{
   padding: 20px 10px;
-  /* position: relative; */
   top: 0;
   left: 0;
 }
@@ -229,6 +225,7 @@ body{
   line-height: 3;
   font-weight: bold;
 }
+
 .top_model_reserve ul .cut a{
   background: url(images/icon/cut_icon.png) center no-repeat;
   background-position: 7px center;
@@ -255,6 +252,10 @@ body{
   height: 40px;
   display: block;
 }
+.top_model_reserve ul li a:hover{
+  background-color: #009357;
+  color: #fff;
+}
 
 /* article_wrap */
 .airticle_wrap{
@@ -272,17 +273,14 @@ body{
   width: 100%;
   margin-bottom: 20px;
 }
-
 .slider_content h2{
   font-size: 23px;
   padding: 20px 0px 0 20px;
   font-weight: bold;
 }
-
 .slider_content .slider_dresser_list{
   padding: 10px;
 }
-
 .slider_content .slider_dresser_list .list_item{
   overflow: hidden;
   margin: 10px;
@@ -291,7 +289,6 @@ body{
   border:5px solid #fff;
   border-radius: 7px;
 }
-
 .slider_content .slider_dresser_list .list_item a{
 color: #444;
 font-size: 10px;
@@ -369,7 +366,6 @@ display: block;
   }
 
 .container_see_all_btn a{
-  display: block; 
   font-size: 17px;
   font-weight: bold;
   color: #009357;
@@ -548,7 +544,7 @@ ul.wpp-list li {
   width: 100%;
 }
 
-/* hair catalog */
+/* hair style */
 .hair_style ul li .short{
   background-image: url(images/hair_style/short_hair.jpeg);
   background-position: center;
@@ -611,6 +607,10 @@ ul.wpp-list li {
   background-position: center;
   background-size: cover;
 } 
+.hair_style ul li .circle_img:hover{
+  opacity: 0.6;
+  transition: 0.5s ;
+} 
 
 
 /* sns_wrap */
@@ -667,6 +667,25 @@ footer .footer_content{
   padding: 0 10px;
   color: #fff;
   border-right: #fff solid 1px;
+  position: relative;
+}
+
+.footer_content .footer_inner .footer_block ul li a::after{
+  position: absolute;
+  bottom: -4px;
+  right: -10px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.footer_content .footer_inner .footer_block ul li a:hover::after{
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 .footer_content .copyright{
@@ -686,7 +705,7 @@ footer .footer_content{
   padding-bottom: 20px;
 }
 .single_header{
-  background-image: url(images/eye_catch/eye_catch2.JPG);
+  background-image: url(images/eye_catch/eye_catch2.jpg);
   background-position:center;
   background-size: cover;
   width: 100%;
@@ -1112,7 +1131,18 @@ font-weight: bold;
 }
 
 
-
+.pageNav{
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+}
+.pageNav ul{
+  display: flex;
+  justify-content: center;
+}
+.pageNav ul li a{
+  color: #444;
+}
 
 
 
@@ -1259,7 +1289,7 @@ footer .footer_content{
 }
 .footer_content .footer_inner .footer_block ul li a{
   font-size: 12px;
-  padding: 0 10px 0 0;
+  padding: 0 10px ;
   color: #fff;
   border-right: #fff solid 1px;
 }
@@ -1526,7 +1556,22 @@ ul.wpp-list li {
     color: #bbd347;/*文字色*/
   }
 
-
+  .search_form{
+    text-align: center;
+    background: #F8F8F8;
+    padding: 40px 0;
+  }
+  .search_form_block{
+    background: #ffffff;
+    border: #E3E3E3 1px solid;
+    text-align: left;
+    padding:18px 0 18px 10px ;
+    width: 85%;
+    font-size: 14px;
+     background:url(../images/arrow_search_form@3x.png) no-repeat #fff 90%;
+     background-size:7px  14px;
+     position: relative;
+  }
 
 
 

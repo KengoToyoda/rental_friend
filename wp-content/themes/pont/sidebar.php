@@ -11,7 +11,7 @@
                 </ul>
               <?php endif; ?>
               <div class="container_see_all_btn">
-                <a href="" class="pont">新規掲載の美容師を全て見る</a>
+                <a href="" class="pont">ランキング一覧を見る</a>
               </div>
               
             </div>

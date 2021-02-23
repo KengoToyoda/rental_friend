@@ -4,8 +4,7 @@
       <section class="wrapper">
         <div class="archive_eyecatch">
           <h2 class="pont">
-          <?php single_cat_title(); ?><br>
-            <span>by pont hair</span>
+          <?php single_cat_title(); ?>モデル　×　ponthair
           </h2>
         </div>
         <?php get_template_part('template-parts/breadcrumb'); ?>

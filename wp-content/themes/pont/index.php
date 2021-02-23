@@ -45,7 +45,7 @@ get_header();
                   </ul>
                 </div>
                 <div class="container_see_all_btn">
-                  <a href="http://localhost/rental_friend/category/%e7%be%8e%e5%ae%b9%e5%b8%ab%e3%82%a2%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%b3%e3%83%88/" class="pont">新規掲載の美容師を全て見る</a>
+                  <a href="<?php echo get_category_link(2); ?>" class="pont">新規掲載の美容師を全て見る</a>
                 </div>
               </div>
               </a>
