@@ -5,11 +5,11 @@
 # これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /rental_friend/
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /rental_friend/index.php [L]
+RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress

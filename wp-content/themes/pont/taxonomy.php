@@ -2,6 +2,9 @@
 //開いているページの情報を取得
 $style_slug = get_query_var('style');
 $style = get_term_by('slug' , $style_slug, 'style');
+
+$color_slug = get_query_var('color');
+$color = get_term_by('slug' , $color_slug, 'color');
 ?>
 
 <?php get_header(); ?>
@@ -13,7 +16,17 @@ $style = get_term_by('slug' , $style_slug, 'style');
         </h2>
         <h3></h3>
         <div class="loop_style">
-        <h3 class="pont"><?php echo $style->name; ?></h3>
+        <h3 class="pont">
+           <?php 
+          if( is_object_in_term($post->ID, 'style') ): 
+            echo $style->name; 
+          elseif( is_object_in_term($post->ID, 'color') ): 
+            echo $color->name;
+          else:
+          endif;
+          ?> 
+          <?php echo $color->name; ?>
+          </h3>
           <ul>
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>

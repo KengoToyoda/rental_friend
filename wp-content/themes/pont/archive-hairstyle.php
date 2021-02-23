@@ -5,8 +5,18 @@
         <h2 class="fg flex_header">
           人気のスタイル
         </h2>
+        <!-- <?php $styles = get_terms(array('taxonomy' => 'style'));
+        if ( !empty($styles) ):
+          ?>
+          <div class="pageNav">
+            <ul>
+              <?php foreach ($styles as $style): ?>
+                <li><a href="<?php echo get_term_link($style); ?>"><?php echo $style->name ?></a></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endif; ?> -->
         <div class="loop_style">
-          <h3 class="pont">ボブスタイル</h3>
           <ul>
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
